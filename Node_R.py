@@ -6,6 +6,7 @@ class Node_R:
         self.tree_left = None
         self.tree_righ = None
         self.bl_leaf = False
+        self.it_deep = None
 
     def set_fea(self,it_fea):
         self.it_fea = it_fea
@@ -25,6 +26,8 @@ class Node_R:
     def set_leaf(self):
         self.bl_leaf = True
 
+    def set_deep(self,it_deep):
+        self.it_deep = it_deep
 
 
 
