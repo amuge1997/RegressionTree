@@ -149,49 +149,7 @@ class CARTree_R:
         return arr_Y
 
 
-if __name__ == '__main__':
 
-    # arr_X = np.array([
-    #     [0,0],
-    #     [1,6],
-    #     [2,2],
-    #     [3,3],
-    #     [4,4],
-    #     [5,5],
-    # ])
-    # arr_Y = np.array([
-    #     [1],
-    #     [0.5],
-    #     [1],
-    #     [2],
-    #     [2.5],
-    #     [2],
-    # ])
-    #
-    # arr_Xt = np.array([
-    #     [1,6.5],
-    #     [3.5,3]
-    # ])
-
-    arr_X = np.array([
-        [0, 0, 1, 2, 3, 4, 5, 6, 7, 8]
-    ]).T
-    arr_Y = np.array([
-        [1, 1.1, 0.5, 1, 2, 2.5, 2, 4, 4.5, 4]
-    ]).T
-
-    arr_Xt = np.linspace(-1,10,100).reshape(-1,1)
-
-    ct = CARTree_R()
-    ct.fit(arr_X=arr_X,arr_Y=arr_Y,it_maxDeep=5)
-    arr_Yt = ct.predict(arr_Xt)
-
-    import matplotlib.pyplot as plt
-
-    plt.scatter(arr_X,arr_Y,c='red')
-    plt.plot(arr_Xt,arr_Yt,c='blue')
-    plt.grid()
-    plt.show()
 
 
 
